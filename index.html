@@ -2,15 +2,20 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>MapLibre Storytelling</title>
+    <title>Fletcher St. Storymap</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src="dist/bundle.js"></script>
     <link href='./dist/maplibre-gl.css' rel='stylesheet' />
     <style>
+        .responsive-iframe {
+            width: 100%;
+            height: 90vh;
+            border: none;
+        }
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
+            font-family: 'Times New Roman', serif;
         }
 
         a,
@@ -35,7 +40,7 @@
             position: fixed;
             z-index: 1;
             opacity: 1;
-            border: 1px solid rgb(100, 100, 100);
+            border: 0px solid rgb(100, 100, 100);
             transition: opacity 0.5s ease-in-out;
             pointer-events: none;
         }
@@ -70,8 +75,14 @@
         #header h1,
         #header h2,
         #header p {
+            font-family: Garamond, serif;
             margin: 0;
             padding: 2vh 2vw;
+            text-align: center;
+        }
+
+        .caption {
+            font-size: smaller;
             text-align: center;
         }
 
@@ -119,9 +130,14 @@
             margin-left: 5vw;
         }
 
+        .lefty-intro {
+            width: 40vw;
+            margin-left: 5vw;
+        }
+
         .righty {
-            width: 33vw;
-            margin-left: 62vw;
+            width: 65vw;
+            margin: 0 auto;
         }
 
         .fully {
@@ -159,6 +175,7 @@
         .step h3 {
             font-size: 2em;
             line-height: 1.3em;
+            text-align: center;
         }
 
         .step p {
@@ -275,7 +292,8 @@
             .centered,
             .lefty,
             .righty,
-            .fully {
+            .fully,
+            .lefty-intro {
                 width: 90vw;
                 margin: 0 auto;
             }
@@ -312,7 +330,8 @@
             'left': 'lefty',
             'center': 'centered',
             'right': 'righty',
-            'full': 'fully'
+            'full': 'fully',
+            'intro': 'lefty-intro'
         }
 
         function getLayerPaintType(layer) {
@@ -422,12 +441,13 @@
             if (record.image) {
                 var image = new Image();
                 image.src = record.image;
+                image.loading = 'lazy';
                 chapter.appendChild(image);
             }
 
             // add image caption to chapters if found in config
             if (record.caption) {
-                caption = document.createElement('p');
+                var caption = document.createElement('p');
                 caption.setAttribute("class", "caption");
                 caption.innerHTML = `<em>${record.caption}</em>`;
                 chapter.appendChild(caption);

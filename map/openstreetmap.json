@@ -10,17 +10,198 @@
   "bearing": 0,
   "pitch": 0,
   "sources": {
+    "1888": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/1888_chapter.geojson"
+    },
     "openmaptiles": {
-      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=6JhWL6EM0R7GkJlqa3ar",
+      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=bshGfp3eBy6tNNRM1zA5",
       "type": "vector"
+    },
+    "1875_poly": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/1875_chapter.geojson"
+    },
+    "1875_img": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 18,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.19769897697141, 39.98123966174214, -75.16478673337686, 40.00085947908613]
+    },
+    "1888_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1988tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 20,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.18205697437244, 39.98821667561781, -75.17472017353401, 39.99259032738438]
+    },
+    "1922_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1922tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 20,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.18043335363771, 39.98798339680219, -75.1741221554295, 39.99174566100977]
+    },
+    "1951_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1951tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 20,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.18062733318, 39.988564603847266, -75.17476127204692, 39.99206151063301]
+    },
+    "1967_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1967tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 20,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.17957615402653, 39.98866189907999, -75.17348788608408, 39.992291268941365]
+    },
+    "1901_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1901tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 20,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.18184316027936, 39.98737502333122, -75.17293859629308, 39.99268325819636]
+    },
+    "1976_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1976tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 20,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.17973403865308, 39.988220683425716, -75.17333217021319, 39.99203699844205]
+    },
+    "1981_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1981tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 14,
+      "maxzoom": 18,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.05028250219104, 40.055839953580474, -75.02144890529073, 40.073028386904056]
+    },
+    "1987_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1987tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 19,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.17943876379928, 39.98832869405638, -75.17374563910101, 39.991722509077704]
+    },
+    "1994_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/1994tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 16,
+      "maxzoom": 19,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds":[-75.19084821768887,39.977482616376605,-75.18378669210769,39.98169216962917]
+    },
+    "2023_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/2023tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 15,
+      "maxzoom": 19,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.19929878993827,39.96816343552843,-75.182776584467,39.99215211860831]
+    },
+    "2024_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/2024tiles/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 17,
+      "maxzoom": 20,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-75.19184121252573,39.99763790663531,-75.18692569533232,40.00056817023795]
+    },
+    "mural_i": {
+      "type": "raster",
+      "tiles": [
+        "https://my-map-cogs.s3.us-east-2.amazonaws.com/mural/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 0,
+      "maxzoom": 6,
+      "scheme": "xyz",
+      "tileSize": 256,
+      "bounds": [-125.15533842649197,21.876891362467106,-67.71685742264341,55.86415822864968]
+    },
+    "ch2": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/ch2.geojson"
+    },
+    "ch3": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/ch3.geojson"
+    },
+    "ch9": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/ch9.geojson"
+    },
+    "ch15": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/ch15.geojson"
+    },
+    "philly": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/philly.geojson"
+    },
+    "philly_point": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/philly_point.geojson"
+    },
+    "red_barn": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/CEBerne/FletcherSt_storymap/main/map/sources/red_barn.geojson"
     }
+
   },
   "sprite": "https://api.maptiler.com/maps/openstreetmap/sprite",
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=6JhWL6EM0R7GkJlqa3ar",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=bshGfp3eBy6tNNRM1zA5",
   "layers": [
     {
       "id": "Background",
       "type": "background",
+      "filter": ["any"],
       "layout": {"visibility": "visible"},
       "paint": {"background-color": "hsl(40, 26%, 93%)"}
     },
@@ -6163,7 +6344,7 @@
       "metadata": {},
       "source": "openmaptiles",
       "source-layer": "place",
-      "minzoom": 3,
+      "minzoom": 4,
       "maxzoom": 15,
       "filter": ["all", ["==", "class", "city"], ["in", "capital", 1, 2]],
       "layout": {
@@ -6224,6 +6405,282 @@
         "text-halo-blur": 1,
         "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
         "text-halo-width": 0.8
+      }
+    },
+    {
+      "id": "1875_b",
+      "type": "raster",
+      "source": "1875_img",
+      "minzoom": 15,
+      "maxzoom": 20,
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1875_barn",
+      "type": "fill",
+      "source": "1875_poly",
+      "filter": ["all", ["==", "type", "red barn"]],
+      "paint": {"fill-color": "rgba(243, 13, 13, 1)"}
+    },
+    {
+      "id": "1875_house",
+      "type": "fill",
+      "source": "1875_poly",
+      "filter": ["all", ["==", "type", "Fletcher house"]],
+      "paint": {"fill-color": "rgba(164, 113, 88, 1)"}
+    },
+    {
+      "id": "1875_depot",
+      "type": "fill",
+      "source": "1875_poly",
+      "filter": ["all", ["==", "type", "Depot"]],
+      "paint": {
+        "fill-outline-color": "rgba(251, 236, 20, 1)",
+        "fill-color": "rgba(170, 170, 170, 0)",
+        "fill-translate-anchor": "viewport"
+      }
+    },
+    {
+      "id": "depot2",
+      "type": "line",
+      "source": "1875_poly",
+      "minzoom": 15,
+      "maxzoom": 22,
+      "filter": ["all", ["==", "type", "Depot"]],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "rgba(251, 236, 20, 1)",
+        "line-width": 6,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "1888_barn",
+      "type": "fill",
+      "source": "1888",
+      "filter": ["all", ["==", "type", "barn"]],
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(243, 13, 13, 1)"}
+    },
+    {
+      "id": "1888_house1",
+      "type": "fill",
+      "source": "1888",
+      "filter": ["all", ["==", "type", "Fletcher house"]],
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(164, 113, 88, 1)", "fill-opacity": 0}
+    },
+    {
+      "id": "1888_house2",
+      "type": "fill",
+      "source": "1888",
+      "filter": ["all", ["==", "type", "house"]],
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "#ca795c", "fill-opacity": 0}
+    },
+    {
+      "id": "1888",
+      "type": "raster",
+      "source": "1888_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1922",
+      "type": "raster",
+      "source": "1922_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1951",
+      "type": "raster",
+      "source": "1951_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1967",
+      "type": "raster",
+      "source": "1967_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1901",
+      "type": "raster",
+      "source": "1901_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1976",
+      "type": "raster",
+      "source": "1976_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1981",
+      "type": "raster",
+      "source": "1981_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1987",
+      "type": "raster",
+      "source": "1987_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "1994",
+      "type": "raster",
+      "source": "1994_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "2023",
+      "type": "raster",
+      "source": "2023_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "2024",
+      "type": "raster",
+      "source": "2024_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 1}
+    },
+    {
+      "id": "mural",
+      "type": "raster",
+      "source": "mural_i",
+      "layout": {"visibility": "visible"},
+      "paint": {"raster-opacity": 0.6}
+    },
+    {
+      "id": "ch2",
+      "type": "line",
+      "source": "ch2",
+      "minzoom": 15,
+      "maxzoom": 22,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "rgba(182, 26, 255, 1)",
+        "line-width": 6,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "ch3",
+      "type": "line",
+      "source": "ch3",
+      "minzoom": 15,
+      "maxzoom": 22,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "rgba(182, 26, 255, 1)",
+        "line-width": 6,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "ch9",
+      "type": "line",
+      "source": "ch9",
+      "minzoom": 15,
+      "maxzoom": 22,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "rgba(182, 26, 255, 1)",
+        "line-width": 6,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "ch15",
+      "type": "line",
+      "source": "ch15",
+      "minzoom": 15,
+      "maxzoom": 22,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "rgba(182, 26, 255, 1)",
+        "line-width": 6,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "philly",
+      "type": "fill",
+      "source": "philly",
+      "minzoom":0,
+      "maxzoom": 10,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color":"#f07911",
+        "fill-outline-color":"rgba(251, 236, 20, 1)",
+        "fill-opacity":0.85
+      }
+    },
+    {
+      "id": "philly_text",
+      "type":"symbol",
+      "source":"philly",
+      "minzoom":0,
+      "maxzoom": 10,
+      "layout": {
+        "visibility": "visible",
+        "text-field":"{name}",
+        "text-font": ["Open Sans Semibold", "Noto Sans Regular"],
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.5],
+        "icon-image": "place-capital-8",
+        "icon-offset": [0, 3],
+        "icon-optional": false,
+        "icon-size": 0,
+        "text-max-width": 8,
+        "text-size": {"base": 1.2, "stops": [[0, 14], [10, 30]]}
+      },
+      "paint": {
+        "text-color": "#b85d0d",
+        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-halo-width": 1.5,
+        "icon-color": "hsla(350, 69%, 38%, 0.98)"
+      }
+    },
+    {
+      "id":"philly_circle",
+      "type":"circle",
+      "source":"philly_point",
+      "minzoom":0,
+      "maxzoom": 4,
+      "layout": {
+        "visibility":"visible"
+      },
+      "paint": {
+        "circle-color": "#b85d0d",
+        "circle-radius": 8,
+        "circle-blur":0.6,
+        "circle-opacity": 0.9
+      }
+    },
+    {
+      "id": "red_barn",
+      "type": "line",
+      "source": "red_barn",
+      "minzoom": 15,
+      "maxzoom": 22,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "rgba(182, 26, 255, 1)",
+        "line-width": 6,
+        "line-opacity": 1
       }
     }
   ],
